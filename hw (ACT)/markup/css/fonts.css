@@ -1,0 +1,26 @@
+@font-face {
+	font-family: FuturaStd-Condensed;
+	src: url(../fonts/FuturaStd-Condensed.otf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: SourceSansPro;
+	/*src: url(../fonts/Source Sans Pro/SourceSansPro-Regular.ttf);*/
+	src: url(../fonts/Source Sans Pro/SourceSansPro-Regular.eot);
+	src: local('Операция~Ы'),
+		url(../fonts/Source Sans Pro/SourceSansPro-Regular.ttf) format('truetype');
+		url(../fonts/Source Sans Pro/SourceSansPro-Regular.woff) format('woff');
+		url(../fonts/Source Sans Pro/SourceSansPro-Regular.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: SourceSansPro;
+	/*src: url(../fonts/Source Sans Pro/SourceSansPro-Bold.ttf);*/
+	src: url(../fonts/Source Sans Pro/SourceSansPro-Bold.ttf);
+	src: local('Операция~Ы'),
+		url(../fonts/Source Sans Pro/SourceSansPro-Bold.ttf) format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}

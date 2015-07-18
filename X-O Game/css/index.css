@@ -1,0 +1,93 @@
+body {
+	background-color: #eee;
+	font-weight: bold;
+	text-transform: uppercase;	
+}
+div {
+    box-sizing: border-box;
+	background-color: #eee;	
+}
+.shadows{
+	box-shadow: 0px 10px 12px 0px rgba(0, 0, 0, 0.16), 0px 8px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btn {
+	display: block;
+	margin: 12px;
+	width: 220px;    
+    border: 2px solid #4682B4;
+    border-radius: 4px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+    z-index: 1;
+}
+.startNewGame{
+	height: 37px;
+	font-weight: bold;
+	background-color: #20B2AA;
+	text-transform: uppercase;
+}
+.startNewGame:hover{
+	background-color: #40E0D0;
+	transition: 1s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+.startNewGame:not(:hover) {
+	color: #fff;
+	background-color: #20B2AA;
+	transition: 1s;
+}
+.field {
+	position: absolute; 
+		right: 0;
+		left: 0;
+	margin: auto;
+    border: 5px solid #4682B4;
+    width: 610px;
+    border-radius: 10px;
+}
+.cell{
+	background-color: #fff;
+}
+.cell.x:after {
+    content: '✕';
+    color: #20B2AA;
+    font-size: 140px;
+    position: absolute;
+    width: 194px;
+    height: 194px;
+    line-height: 194px;
+    text-align: center;
+}
+.cell.o:after {
+    color: #DC143C;
+    content: '◯';
+    font-size: 140px;
+    position: absolute;
+    width: 194px;
+    height: 194px;
+    line-height: 200px;
+    text-align: center;
+}
+.row {
+    height: 200px;
+}
+.cell {
+    display: inline-block;
+    border: solid gray 2px;
+    width: 200px;
+    height: 200px;
+}
+.winner-message {
+	margin-top: 0;
+	height: 28px;
+	cursor: none;
+	display: inline-block;
+	background-color: #CD5C5C;	
+	visibility: hidden;
+}
+.result{
+	/*visibility: hidden;*/
+}

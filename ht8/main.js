@@ -21,7 +21,7 @@ function multiplicationTable(size) {
     return table;
 }
 
-function matrix (size) {
+function matrix(size) {
     var matrix = [];
     ///
 	size = 10; //let it be = 10 again
@@ -30,28 +30,28 @@ function matrix (size) {
 		matrix[i] = new Array(size);
 		for(var j=0; j<size; j++) {
 			if (i==j)
-				matrix[i][j] = 1;
+				matrix[i][j] = ' 1 ';
 			
 			else if (j==size-i-1)
-				matrix[i][j] = 2;
+				matrix[i][j] = ' 2 ';
 
 			else {
 				if (i<size/2 && j>i && j<size-i)
-					matrix[i][j] = 3;
+					matrix[i][j] = ' 3 ';
 				else if ( i>size/2 && j>size-i-1 && j<i)
-					matrix[i][j] = 5;
+					matrix[i][j] = ' 5 ';
 				
 				else if ( j<size/2)
-					matrix[i][j] = 6;
+					matrix[i][j] = ' 6 ';
 				
 				else
-					matrix[i][j] = 4;
+					matrix[i][j] = ' 4 ';
 			}			
 		}		
 	}	
 	///
     return matrix;
-}
+};
 
 function pascal (size) {
     var triangle = [];

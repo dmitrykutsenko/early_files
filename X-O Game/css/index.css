@@ -17,7 +17,6 @@ div {
     border: 2px solid #4682B4;
     border-radius: 4px;
 	color: #fff;
-	vertical-align: middle;
 	text-align: center;
 	cursor: pointer;
     z-index: 1;
@@ -71,14 +70,13 @@ div {
     line-height: 200px;
     text-align: center;
 }
-.row {
+.row, .cell {
     height: 200px;
 }
 .cell {
     display: inline-block;
     border: solid gray 2px;
     width: 200px;
-    height: 200px;
 }
 .winner-message {
 	margin-top: 0;
@@ -87,7 +85,5 @@ div {
 	display: inline-block;
 	background-color: #CD5C5C;	
 	visibility: hidden;
-}
-.result{
-	/*visibility: hidden;*/
+	padding-top: 2px;
 }

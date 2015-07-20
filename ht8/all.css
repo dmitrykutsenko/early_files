@@ -13,8 +13,9 @@ table {
     border: solid 3px;
     width: 220px;
     border-radius: 5px;	
-	display: block;
+	/*display: block;*/
 	word-spacing: 4px;
+	display:none;
 }
 #multiplication-table{
 	border-color: #008B8B;

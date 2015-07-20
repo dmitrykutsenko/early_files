@@ -82,3 +82,9 @@ function render (array) {
     }
     return result.join('');
 }
+
+$(document).ready(function(){
+    $("#multiplication-table").fadeIn("slow");
+    $("#matrix").fadeIn(1500);
+    $("#pascal-triangle").fadeIn(2500);
+});

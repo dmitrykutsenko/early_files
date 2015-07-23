@@ -3,8 +3,8 @@
 <head>
      <meta charset="UTF-8">
     <title>ACT</title>
-	<link rel="stylesheet" href="css/fonts.css"/>
-	<link rel="stylesheet" href="fonts/Source Sans Pro/stylesheet.css"/>
+	<link rel="stylesheet" href="fonts/FuturaStd-Condensed.css"/>
+	<link rel="stylesheet" href="fonts/SourceSansPro/SourceSansPro-Regular.css"/>
     <link rel="stylesheet" href="css/all.css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
 	<script src="js/index.js"></script>
@@ -33,32 +33,24 @@
 				</li>
 				
 				<li id="nav-about">
-					<a href="#" title="link">About Us</a>
-					
+					<a href="#" title="link">About Us</a>					
 					<!-- begin #subnav-about -->
-					<div id="subnav-about" class="submenu">
-						<ul>
-							<li id="subnav-mission"><a href="#" title="link">Mission</a></li>
-							<li id="subnav-program"><a href="#" title="link">Program</a></li>
-							<li id="subnav-reports"><a href="#" title="link">Reports</a></li>
-						</ul>
-					</div>
-					<!-- end #subnav-about -->				
-					
+					<menu  id="subnav-about">
+						<li id="subnav-mission"><a href="#" title="link">Mission</a></li>
+						<li id="subnav-program"><a href="#" title="link">Program</a></li>
+						<li id="subnav-reports"><a href="#" title="link">Reports</a></li>
+					</menu>
+					<!-- end #subnav-about -->					
 				</li>
 			
 				<li id="nav-media">
-					<a href="#" title="link">Media Center</a>
-					
+					<a href="#" title="link">Media Center</a>					
 					<!-- begin #subnav-media -->
-					<div id="subnav-media" class="submenu">
-						<ul>
-							<li id="subnav-media-podcasts"><a href="#" title="link">Podcasts</a></li>
-							<li id="subnav-media-youtube"><a href="#" title="link">YouTube Channel</a></li>
-						</ul>
-					</div>
-					<!-- end #subnav-media -->
-					
+					<menu id="subnav-media">
+						<li id="subnav-media-podcasts"><a href="#" title="link">Podcasts</a></li>
+						<li id="subnav-media-youtube"><a href="#" title="link">YouTube Channel</a></li>
+					</menu>
+					<!-- end #subnav-media -->					
 				</li>
 				
 				<li id="nav-why">
@@ -66,8 +58,7 @@
 				</li>
 				
 				<li id="nav-action">
-					<a href="#" title="link">Take Action</a>
-					
+					<a href="#" title="link">Take Action</a>					
 				</li>
 				
 				<li class="clear-fix"></li>
@@ -78,25 +69,17 @@
     </header>
 	<!-- end header -->
 	
-	<!-- begin #main -->
-    <div id="main">        
+	<!-- begin main -->
+    <main>        
 		<div class="container">
 		
 			<!-- begin .gallery -->
-            <div class="gallery">				
-				<div class="slider-block">
-					<div class="slider-holder">
-						<ul class='slider'>
-							<li><div class="box"><img src="images/gallery-pic1.png" alt=""/></div></li>
-							<li><div class="box"><img src="images/gallery-pic2.jpg" alt=""/></div></li>
-							<li><div class="box"><img src="images/gallery-pic3.jpg" alt=""/></div></li>
-						</ul>
-					</div>
+            <div class="gallery">
+				<div class="slider-holder">
+					<img src="images/gallery-pic1.jpg" alt=""/>
 				</div>
-				<div id="controls">
-					<a class="prev-btn" href="#">Previous</a>
-					<a class="next-btn" href="#">Next</a>
-				</div>
+				<a class="prev-btn" href="#">Previous</a>
+				<a class="next-btn" href="#">Next</a>
             </div>
 			<!-- end .gallery -->
 			
@@ -113,69 +96,68 @@
 			<!-- end .joiner -->
 			
 		</div>
-    </div>
-	<!-- end #main -->	
+    </main>
+	<!-- end main -->	
 	
-	<!-- begin section -->
-	<section>
+	<!-- begin sections -->
+	<div id="sections">
 		<div class="container">
-		
 			<!-- begin .news -->
-             <div class="news shadow-bordered">
+			<div id="news" class=" shadow-bordered">
 				<h3 class="dark-blue-txt">Latest News</h3>
 				
 				<!-- begin topic 1 -->
-				<div class="news-topic">
-                    <img src="images/black-box.png" alt="latest news"/>
-                    <article>
-                        <span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</span>
+				<section>
+					<img src="images/black-box.png" alt="latest news"/>
+					<article>
+						<span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</time></span>
 						<h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
-                        <span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</span>
-                        <a class="red-txt" href="#">read more &#187;</a>
-                    </article>
-					<div class="underline"></div>
-                </div>
+						<span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur.</span>
+						<a class="red-txt" href="#">read more &#187;</a>
+				</article>
+				<div class="underline"></div>
+				</section>
 				<!-- end topic 1 -->
 				
 				<!-- begin topic 2 -->
-				<div class="news-topic">
-                    <img src="images/black-box.png" alt="latest news"/>
-                    <article>
-						<span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</span>
-                        <h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
-                        <span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</span>
+				<section>
+					<img src="images/black-box.png" alt="latest news"/>
+					<article>
+						<span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</time></span>
+						<h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
+						<span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur.</span>
 						<a class="red-txt" href="#">read more &#187;</a>
-                    </article>
+					</article>
 					<div class="underline"></div>
-                </div>
+				</section>
 				<!-- end topic 2 -->
-				
+					
 				<!-- begin topic 3 -->
-				<div class="news-topic">
-                    <img src="images/black-box.png" alt="latest news"/>
-                    <article>
-                        <span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</span>
-                        <h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
-                        <span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</span>
+				<section>
+					<img src="images/black-box.png" alt="latest news"/>
+					<article>
+						<span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</time></span>
+						<h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
+						<span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur.</span>
 						<a class="red-txt" href="#">read more &#187;</a>
-                    </article>
+					</article>
 					<div class="underline"></div>
-                </div>
+				</section>
 				<!-- end topic 3 -->
-				
+			
 				<!-- begin topic 4 -->
-				<div class="news-topic">
-                    <img src="images/black-box.png" alt="latest news"/>
-                    <article>
-                        <span class="news-dates dark-blue-txt"><time datetime="2013-07-31">July 31, 2013</span>
-                        <h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
-                        <span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</span>
+				<section>
+					<img src="images/black-box.png" alt="latest news"/>
+					<article>
+						<time class="news-dates dark-blue-txt" datetime="2013-07-31">July 31, 2013</time>
+						<h3 class="light-blue-txt">Lorem ipsum dolor sit amet</h3>
+						<span>Donec ullamcorper nulla non metus fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur.</span>
 						<a class="red-txt" href="#">read more &#187;</a>
-                    </article>
+					</article>
 					<div class="underline"></div>
-                </div>
+				</section>
 				<!-- end topic 4 -->
-				
+			
 			</div>
 			<!-- end .news -->
 		
@@ -192,102 +174,108 @@
 					<a class="red-txt" href="#">learn more &#187;</a>
 				</div>
 			</aside>	
-			<!-- end aside -->
+		<!-- end aside -->
 		
 		</div>
-	</section>
-	<!-- end section -->
+	</div>
+	<!-- end sections -->
 	
 	<!-- begin footer -->
     <footer>
-			<div class="container">
-				<div class="logo-footer"><a href="#"></a></div>
+		<div class="container">
+			<div class="logo-footer"><a href="#"></a></div>
 				
-				<ul>
+			<ul>					
+				<li class="first_level">
+					<ul class="second_level">
+						<li>
+							<h3>Learn</h3>
+						</li>
+						<li>
+							<a href="#">Who We Are</a>
+						</li>
+						<li>
+							<a href="#">Why Corporate Tax Reform</a>
+						</li>
+						<li>
+							<a href="#">What Others Are Saying</a>
+						</li>
+						<li>
+							<a href="#">News</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+					</ul>
+				</li>
 					
-					<li class="first_level">
-						<ul class="second_level">
-							<li>
-								<h3>Learn</h3>
-							</li>
-							<li>
-								<a href="#">Who We Are</a>
-							</li>
-							<li>
-								<a href="#">Why Corporate Tax Reform</a>
-							</li>
-							<li>
-								<a href="#">What Others Are Saying</a>
-							</li>
-							<li>
-								<a href="#">News</a>
-							</li>
-							<li>
-								<a href="#">Blog</a>
-							</li>
-						</ul>
-					</li>
+				<li class="first_level">
+					<ul class="second_level">
+						<li>
+							<h3>Take Action</h3>
+						</li>
+						<li>
+							<a href="#">Write to Congress</a>
+						</li>
+						<li>
+							<a href="#">Sign the Petition</a>
+						</li>
+					</ul>
+				</li>
 					
-					<li class="first_level">
-						<ul class="second_level">
-							<li>
-								<h3>Take Action</h3>
-							</li>
-							<li>
-								<a href="#">Write to Congress</a>
-							</li>
-							<li>
-								<a href="#">Sign the Petition</a>
-							</li>
-						</ul>
-					</li>
-					
-					<li class="first_level">
-						<ul class="second_level">
-							<li>
-								<h3>Stay Informed</h3>
-							</li>
-							<li>
-								<a href="#">Follow us on Twitter</a>
-							</li>
-							<li>
-								<a href="#">Watch us on YoutTube</a>
-							</li>
-							<li>
-								<a href="#">Join our Email List</a>
-							</li>
-							<li>
-								<a href="#">Contact Us</a>
-							</li>
+				<li class="first_level">
+					<ul class="second_level">
+						<li>
+							<h3>Stay Informed</h3>
+						</li>
+						<li>
+							<a href="#">Follow us on Twitter</a>
+						</li>
+						<li>
+							<a href="#">Watch us on YoutTube</a>
+						</li>
+						<li>
+							<a href="#">Join our Email List</a>
+						</li>
+						<li>
+							<a href="#">Contact Us</a>
+						</li>
 							
-						</ul>
-					</li>
+					</ul>
+				</li>
 					
-					<li class="first_level" id="final">
-						<ul class="second_level">
-							<li>
-								<div id="socials">
-									<div id="social-tw"> <a href="#"></a> </div>
-									<div id="social-youtube"> <a href="#"></a> </div>
-								</div>
-							</li>
-							<li>
-								<a href="#">Alliance for Competitive Taxation</a>
-							</li>
-							<li>
-								<a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
-							</li>
-							<li>Copyright &copy; 2013</li>
-						</ul>
-					</li>
-					<li class="clear-fix"></li>
-				</ul>
-				
-		</footer>
+				<li class="first_level" id="final">
+					<ul class="second_level">
+						<li>
+							<div id="socials">
+								<div id="social-tw"> <a href="#"></a> </div>
+								<div id="social-youtube"> <a href="#"></a> </div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Alliance for Competitive Taxation</a>
+						</li>
+						<li>
+							<a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+						</li>
+						<li>Copyright &copy; 2013</li>
+					</ul>
+				</li>
+				<li class="clear-fix"></li>
+			</ul>
+			
+			<!-- Successfully checked by W3C CSS validation service -->
+			<p style="display: block; float: left; margin: 15 0 0;">
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border:0;width:54px;height:18px;"
+					src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+					alt="Valid CSS!" />
+				</a>
+			</p>
+			
+		</div>
+	</footer>
 	<!-- end footer -->
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>

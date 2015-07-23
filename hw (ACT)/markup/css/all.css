@@ -45,10 +45,10 @@ q:after{content:''}
 }
 
 .container{
-	padding: 0 18%;
+	padding: 0 17%;
 	margin: 0 auto;
-	max-width: 1500px;
-	min-width: 600px;
+	max-width: 965px;
+	min-width: 610px;
 }
 .container:after{
 	display: block;
@@ -76,7 +76,7 @@ q:after{content:''}
 	float: right;
 	height: 20px;
 	margin-top: 100px;
-	margin-right: 4%;
+	padding-right: 2%;
 }
 #tw-small,
 #youtube-small {
@@ -99,18 +99,11 @@ q:after{content:''}
 }
 .follows a{	
 	display: inline-block;
-	padding-left: 15px;
+	padding-left: 19px;
 	height: 15px;
-	text-indent: 4;
 	text-align: left;
 }
 	
-#mail_icon {
-	di:left;
-    width: 22px;
-    height: 15px; 
-}
-
 nav{
 	height: 51px;
 	background: url(../images/bg-nav-repeatable.png) repeat-x;
@@ -139,7 +132,6 @@ nav li a{
 	padding-bottom: 17px;
 	width: 100%;
 	font-size: 1.2em;
-	text-indent: 5;
 	text-align: center;
 	text-shadow: 1px 1px 1px #ffffff;
 }
@@ -160,25 +152,26 @@ nav li a{
 	width: 19%;
 }
 
-.submenu{
+menu{
 	position: absolute;
 	top: 52px;
-	width: 140px;
+	width: 118px;
 	background-color: #1C4C8E;
 	display: none;
 	z-index: 11;
 }
-.submenu li {
-	width: 118px;
+menu li {
+	margin-left: -40px;
+	width: 158px;
 	height: 28px;
 	background: linear-gradient(to top, #D3D3D3 0%, #ECECEC 36%, #fff 100%);
 	text-align: left;
 }
-.submenu li:hover{
+menu li:hover{
 	background: linear-gradient(to top, #D88B06 0%, #FBA809 36%, #fff 100%);
 	text-align: left;
 }
-.submenu li a{
+menu li a{
 	padding-top: 8px;
 }
 
@@ -193,62 +186,38 @@ nav li a{
 }
 
 /* main begin */
-#main{
+main{
 	background-color: #1C4C8E;
 	background: url(../images/bg-flag.jpg) repeat;
-	height: 436px; /*388px;*/
-	/*max-width: 1500px;*/
-	/*min-width: 606px;*/
+	padding-bottom: 45px;
 }
-
-#main .container{
+main  .container {
 	padding-top: 45px;
 }
-#main * {
+main * {
 	border-radius: 4px;
 }
 /* main end */
 
 /* gallery begin */
 .gallery {
-	width: 62%;
+	width: 606px;
 	border: 1px solid #000;
 	position: relative;
 	overflow: hidden;
 	float: left;
 }
-.gallery ul {padding: 46.875% 0 0;
-	margin: 0;
-	position: relative;
-}
-.gallery ul li{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left:0;
+.slider-holder img{
+	width: 101%;
+	max-width: 101%;
 }
 
-.slider-holder, .joiner {
-	height:339px;
+.gallery, .slider-holder, .joiner {
+	height: 339px;
 }
 .slider-holder{
-	overflow:hidden;
 	width:604px;
-	margin: 0 auto;
 }
-.slider{
-	margin:0;
-	padding:0;
-	width: 99999px;
-}
-.slider li{
-	float:left;
-	width:604px;
-}		
-.slider .box{
-	opacity: 50%;
-}
-		
 .gallery .prev-btn,
 .gallery .next-btn {
 	width: 26px;
@@ -258,7 +227,8 @@ nav li a{
 	bottom: 15px;
 	border-radius: 1px;
 	text-indent: -9999px;
-	z-index: 10;
+	z-index: 20;
+	top: 88%;
 }
 .gallery .prev-btn {
 	background: url(../images/btn-prev.png) no-repeat;
@@ -272,9 +242,8 @@ nav li a{
 
 .right-side {
 	display: inline-block;
-	/*width: 33.26%;*/
 	width: 315px;
-	margin-left: 3%;
+	margin-left: 2.6%;
 }
 
 .shadow-bordered {
@@ -284,6 +253,7 @@ nav li a{
   
 /* joiner begin*/
 .joiner {
+	display: inline-block;
 	border: 1px solid #000;
 	background: url(../images/bg-join.png) repeat;
 	overflow: hidden;
@@ -292,7 +262,6 @@ nav li a{
 	height: 341px; 
 	margin-right: 8%;
 	margin-left: 8%;
-	
 }
 #join,
 .joiner a {
@@ -325,17 +294,19 @@ nav li a{
 }
 .joiner #send-join,
 .joiner input {
-	width: 97%;
 	text-align: left;
-	margin-top: 15px;
-	/*margin-left: 8%;*/
+	margin-top: 18px;
 	border-width: 0px;
 }
 .joiner input {
-	border-color: #000;
+	border: 1px solid #000;
 	height: 35px;
+	font-size: 1.5em;
+	padding-left: 10px;
+	width: 246px;
 }
 .joiner #send-join {
+	width: 100%;
 	background: url(../images/btn-signup.png) no-repeat 100% 100% ;
 	height: 45px;
 	width: 98%;
@@ -343,49 +314,46 @@ nav li a{
 }
 /* joiner end*/
 
-/* section begin */
-section {
-	background-color: #F1F1F1;
-	/*margin-top: -5px;*/
-	
+/* sections begin */
+#sections {
+	background-color: #F1F1F1;	
 	padding-top: 40px;
 	padding-bottom: 47px;
 	border-bottom: 1px solid #DCDCDC;
 }
-section h3 {
+#sections h3 {
 	font-size: 1.8em;
 	font-weight: normal;
 }
-section img {
-	display: block;
+#sections img {
 	float: left;
 }
-.news-topic {
-	padding-top: 30px;
-	padding-left: 4%;
-	padding-right: 5%;
+section {
+	width: 89%;
+	padding: 15px 5% 15px 4%;
 }
-.news {
+time {
+	font-size: 1.1em;
+}
+#news {
 	float: left;
-	width: 62%;
-	/*min-width: 606px;*/
+	width: 576px;
 	background-color: #fff;
 	border-top: 1px solid #DCDCDC;
 	border-left: 1px solid #DCDCDC;
-	padding: 30px 0 20px;
+	padding: 30px 0px 35px 30px;
 }
-.news > h3 {
+#news > h3 {
 	font-family: FuturaStd-Condensed, Arial;
 	text-transform: uppercase;
 	font-size: 1.9em;
-	margin-top: -7px;
-	margin-bottom: -10px;
-	padding-left: 5%;
+	margin-bottom: 5px;
+	margin-left: 25px;
 }
 article {
 	display: inline-block;
-	padding-left: 5%;
-	width: 72%;
+	padding-left: 3%;
+	width: 74.7%;
 }
 article * {
 	margin: 5px 0;
@@ -408,9 +376,12 @@ article a {
 	background: url(../images/underline.png) repeat-x 100% 100%;
 	margin-top: 15px;
 }
-/* section end */
+/* sections end */
 
 /* aside begin */
+aside div {
+	margin-top: -20px;
+}
 aside div {
 	background-color: #fff;
 	/*margin-top: -5px;*/
@@ -437,6 +408,7 @@ aside a {
 	margin-top: 4%;
 }
 aside .tk {
+	margin-top: 30px;
 	background: white url("../images/tk.png") no-repeat scroll 50% 50%;
 }
 aside .tk a {
@@ -478,6 +450,7 @@ footer h3 {
 	font-family: FuturaStd-Condensed, Arial;
 	text-transform: uppercase;
 	font-size: 1.8em;
+	font-weight: normal;
 }
 
 #socials {
@@ -507,6 +480,7 @@ footer h3 {
 	width: 100%;
 	height: 100%;
 }
+
 footer .container .social {
 	margin-left: 36px;
 }

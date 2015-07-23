@@ -1,7 +1,11 @@
 $(document).ready(function(){	
-	
+	$('body').on("click", "a", function( event ){
+		event.preventDefault();
+	});
+  
 	$('body').click(function( event ){
-        // check whether clicked element is a part of nav
+          
+		// check whether clicked element is a part of nav
         var eventInNav = $( event.target ).parents('nav') || $( event.target ).parents('#nav-about') || $( event.target ).parents('#nav-media');
 
         // not our element
@@ -23,100 +27,36 @@ $(document).ready(function(){
 	
 
 	// gallery slider
-    slider('.slider-block');
-
-    function slider(sliderClass) {
-        var sliderBlock = $(sliderClass);
-
-        sliderBlock.each(function () {
-            var sliderList = $(this).find('.slider');
-            var sliderItems = sliderList.children('li');
-            var qty = sliderItems.length;
-            //clone
-            sliderList.append(sliderItems.first().clone());
-
-            //find controls
-            var controls = $('#controls');
-
-            //slider
-            var itemWidth = sliderItems.width();
-            var sliderLeft = 0;
-            var newsliderLeft = 0;
-            var currentSlide = 0;
-            var flag = true;
-
-            setActive();
-
-            //buttons handler
-            controls
-                .on('click', '.next-btn', eventHandler(function() {
-					
-                    if (currentSlide >= qty){
-                        jumpToFirstItem();
-                    }
-                    goToNextItem();
-                }))
-                .on('click', '.prev-btn', eventHandler(function() {
-                    if (currentSlide <= 0){
-                        jumpToLastItem();
-                    }
-                    goToPreviousItem();
-                }));
-
-            function setActive(){
-                var index = currentSlide;
-                if (currentSlide > qty - 1) {
-                    index = 0
-                } else if (currentSlide < 0) {
-                    index = qty;
-                }
-            }
-
-            function startAnim(newsliderLeft) {
-                flag = false;
-                sliderList.animate({
-                    marginLeft: Math.round(newsliderLeft)
-                }, '300', function () {
-                    flag = true;
-                    sliderLeft = newsliderLeft;
-                });
-            }
-
-            function animate(left) {
-                setActive();
-                startAnim(left);
-            }
-            function prepareFutureSlide(index) {
-                currentSlide = index;
-                sliderLeft = index * itemWidth * -1;
-            }
-            function jumpToItem(index) {
-                prepareFutureSlide(index);
-                sliderList.css({'margin-left': sliderLeft});
-            }
-            function jumpToFirstItem () {
-                jumpToItem(0);
-            }
-            function jumpToLastItem () {
-                jumpToItem(qty);
-            }
-            function goToItem(index) {
-                prepareFutureSlide(index);
-                animate(sliderLeft);
-            }
-            function goToNextItem () {
-                goToItem(currentSlide + 1);
-            }
-            function goToPreviousItem () {
-                goToItem(currentSlide - 1);
-            }
-            function eventHandler (fn) {
-                return function (e) {
-                    e.preventDefault();
-                    if (!flag) return;
-                    fn.call(this, e);
-                }
-            }
-        })
-    }
+	var sliderPics = [ 0, 0, 0, 0];
+	//	'gallery-pic1.jpg',
+	//	'gallery-pic2.jpg',
+	//	'gallery-pic3.jpg',
+	//]
+	var currPic = -1;
+	var numPics = sliderPics.length;
+	
+	var delay = 2000;
+	
+	var currTimeout;
+	
+	function showPic(direction) {
+		if (document.images) {
+			currPic = currPic + direction;
+			if (currPic < 0) {
+				currPic = numPics - 1;
+			}
+			if (currPic == numPics) currPic = 0;
+		}
+		$('.slider-holder img').attr('src', 'images/gallery-pic' + currPic + '.jpg');
+		//currTimeout = setTimeout('showPic(1)', delay);
+	}
+	
+	$('.next-btn').click(function showNext() {
+		showPic(1);
+	});
+	$('.prev-btn').click(function showPrev() {
+		showPic(-1);
+	});
+	
+	showPic(2);
 });

@@ -4,6 +4,8 @@
      <meta charset="UTF-8">
     <title>Ikaros</title>
     <link rel="stylesheet" href="css/all.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+	<script src="js/index.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -33,18 +35,22 @@
 	<!-- end header -->
 	
 	<!-- begin #main -->
-    <div id="main">
+    <main>
         <div class="container">
 		
 		<!-- begin .gallery -->
+            <div class="gallery-holder">
             <div class="gallery">
-                <ul>
-                    <li><img src="images/slider1.jpg" alt=""/></li>
-                    <li><img src="images/slider1.jpg" alt=""/></li>
-                    <li><img src="images/slider1.jpg" alt=""/></li>
-                </ul>
+                <!--<ul>
+                    <li><img src="images/slider0.jpg" alt=""/></li>
+                    <li><img src="images/slider2.jpg" alt=""/></li>
+                    <li>--></li>
+					<img src="images/slider1.jpg" alt=""/>
+					<!--</li>
+                </ul>-->
                 <a class="prev-btn" href="#">Previous</a>
                 <a class="next-btn" href="#">Next</a>
+            </div>
             </div>
 			<!-- end .gallery -->
 			
@@ -60,17 +66,17 @@
 					<!-- begin .tabs-holder -->
                     <div class="tabs-holder">
                         <ul class="tabset">
-                            <li class="active"><a href="#one">Web design</a>
-                            </li><li><a href="#two">Photography</a>
-                            </li><li><a href="#three">Graphics</a></li>
+                            <li class="active"><a href="#one">Web design</a></li>
+							<li><a href="#two">Photography</a></li>
+							<li><a href="#three">Graphics</a></li>
                         </ul>
 						
 						<!-- begin #first-tab -->
                         <div class="tab active" id="first-tab">
-                            <img src="images/tab1.jpg" alt="tab image"/>
+                            <img src="images/tab1.jpg" alt="tab1 image"/>
                             <div class="tabs-info">
                                 <h3>Ipsum Fusce Aenean Cursus Euismod</h3>
-                                <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. </p>
+                                <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</p>
                                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. </p>
                                 <ul>
                                     <li>Vestibulum id ligula porta felis euismod semper.</li>
@@ -83,15 +89,15 @@
 						
 						<!-- begin #second-tab -->
                         <div class="tab" id="second-tab">
-                            <img src="images/tab1.jpg" alt="tab image"/>
+                            <img src="images/tab2.jpg" alt="tab2 image"/>
                             <div class="tabs-info">
-                                <h3>Ipsum Fusce Aenean Cursus Euismod</h3>
-                                <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. </p>
+                                <h3>Lorem Ipsum Dolor Sit Amet Est Furstat</h3>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus fringilla. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Donec ullamcorper nulla non metus alles et fringilla.</p>
                                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. </p>
                                 <ul>
-                                    <li>Vestibulum id ligula porta felis euismod semper.</li>
                                     <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                    <li>Vestibulum id ligula porta felis euismod semper.</li>
+                                    <li>Curabitur blandit tempus porttitor. Cras mattis consectetur.</li>
                                 </ul>
                             </div>
                         </div>
@@ -99,15 +105,15 @@
 						
 						<!-- begin #third-tab -->
                         <div class="tab" id="third-tab">
-                            <img src="images/tab1.jpg" alt="tab image"/>
+                            <img src="images/tab3.jpg" alt="tab3 image"/>
                             <div class="tabs-info">
                                 <h3>Ipsum Fusce Aenean Cursus Euismod</h3>
-                                <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. </p>
+                                <p>Cras justo odio, dapibus ac facilisis in est. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum.</p>
                                 <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. </p>
                                 <ul>
-                                    <li>Vestibulum id ligula porta felis euismod semper.</li>
-                                    <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
                                     <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                    <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+                                    <li>Vestibulum id ligula porta felis euismod semper.</li>
                                 </ul>
                             </div>
                         </div>
@@ -244,12 +250,12 @@
         </div>
 		<!-- end .gallery -->
 		
-    </div>
-	<!-- end #main -->
+    </main>
+	<!-- end main -->
 	
 	<!-- begin footer -->
     <footer>
-        <div class="footer-main">
+        <div class="footer-main">	
             <div class="container">
                 <div class="column">
                     <h4>Popular posts</h4>
@@ -312,6 +318,8 @@
         </div>
     </footer>
 	<!-- end footer -->
+
+</p>
 </div>
 </body>
 </html>

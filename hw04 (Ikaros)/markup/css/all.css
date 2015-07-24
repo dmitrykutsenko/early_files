@@ -89,7 +89,7 @@ nav li a:hover{
 }
 
 /* main begin */
-#main{
+main{
 	border-top:1px solid #000;
 	padding: 50px 0 0;
 }
@@ -104,20 +104,50 @@ nav li a:hover{
 /* main end */
 
 /* gallery begin */
+.gallery-holder {
+	position: relative;
+}
+
 .gallery {
 	width: 100%;
 	position: relative;
-	overflow: hidden;
+	z-index: 1;
 }
-.gallery .prev-btn,
-.gallery .next-btn {
+/*
+.gallery ul{
+	margin: 0;
+	padding: 46.875% 0 0;
+	position: relative;
+	
+	padding: 0;
+	width: 9999px;
+	
+	list-style: none;
+}
+.gallery ul li{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left:0;
+	float: left;
+	width: 659px;
+	height: 290px;
+}
+*/
+.gallery-holder .prev-btn,
+.gallery-holder .next-btn {
 	width: 35px;
 	height: 36px;
 	cursor: pointer;
 	position: absolute;
+	
+	overflow: hidden;
+	
 	top:50%;
 	margin-top: -18px;
 	text-indent: -9999px;
+	
+	z-index: 11;
 }
 .gallery .prev-btn {
 	background: url(../images/prev.png) no-repeat;
@@ -129,18 +159,7 @@ nav li a:hover{
 	background: url(../images/next.png) no-repeat;
 	z-index: 10;
 }
-.gallery ul{
-	margin: 0;
-	padding: 46.875% 0 0;
-	list-style: none;
-	position: relative;
-}
-.gallery ul li{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left:0;
-}
+
 .gallery img{
 	width: 100%;
 }
@@ -187,8 +206,11 @@ nav li a:hover{
 	display: block;
 	padding: 0 19px;
 	background: #f8f8f8;
-	font-weight: bold;
-	color: #555;
+}
+tabset .active a{
+	background: #fff;
+	color: #6b99b6;
+	padding-bottom: 1px;
 }
 .tabset a:hover{
 	background: #fff;

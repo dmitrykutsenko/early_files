@@ -22,15 +22,13 @@ select{
 	font: 100% source_sans_proregular, arial,sans-serif;
 	vertical-align: middle;
 }
-form,fieldset{
+form,fieldset,ul{
 	margin: 0;
 	padding: 0;
 	border-style: none;
 }
 header, footer, article, section, hgroup, nav, figure { display: block; }
 ul{
-	margin:0;
-	padding:0;
 	list-style:none;
 }
 q{quotes:none;}
@@ -188,7 +186,7 @@ menu li a{
 /* main begin */
 main{
 	background-color: #1C4C8E;
-	background: url(../images/bg-flag.jpg) repeat;
+	background: #15386E url(../images/bg-flag.jpg) repeat;
 	padding-bottom: 45px;
 }
 main  .container {
@@ -255,7 +253,7 @@ main * {
 .joiner {
 	display: inline-block;
 	border: 1px solid #000;
-	background: url(../images/bg-join.png) repeat;
+	background: #2C5299 url(../images/bg-join.png) repeat;
 	overflow: hidden;
 }
 .join-form {
@@ -307,7 +305,7 @@ main * {
 }
 .joiner #send-join {
 	width: 100%;
-	background: url(../images/btn-signup.png) no-repeat 100% 100% ;
+	background: orange url(../images/btn-signup.png) no-repeat 100% 100% ;
 	height: 45px;
 	width: 98%;
 	display: block;
@@ -373,7 +371,7 @@ article a {
 }
 .underline{
 	height:	2px;
-	background: url(../images/underline.png) repeat-x 100% 100%;
+	background: grey url(../images/underline.png) repeat-x 100% 100%;
 	margin-top: 15px;
 }
 /* sections end */
@@ -384,7 +382,6 @@ aside div {
 }
 aside div {
 	background-color: #fff;
-	/*margin-top: -5px;*/
 	height: 288px;
 	margin-bottom: 30px;
 }
@@ -493,7 +490,6 @@ footer .container ul li ul.second_level {
 footer .container ul li ul.second_level li a{
 	line-height: 17px;
 }
-
 #final a{
     line-height: 33px;
 }

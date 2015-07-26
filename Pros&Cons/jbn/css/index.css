@@ -1,0 +1,218 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: hand;
+}
+.jumbotron {
+    height: 235px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.jumbotron h1 {
+    height: 135px;
+    margin-top: -50px;
+    padding-top: 30px;
+    background-color: #008080;
+    font-size: 6em;
+    color: #fff;
+}
+.jumbotron p {
+    display: block;
+    margin-top: -7px;
+    font-size: 0.8em;
+    color: #A9A9A9;
+    transition: 1s;
+}
+.jumbotron p:hover {
+    color: #003147;
+}
+.row {
+    background: #dcdcdc; /*url('../images/sagano-bamboo-forest-01.jpg') no-repeat;*/
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ è Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+
+    min-height: 1200px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h2 {
+    margin-top: -5px;
+    font-size: 2.5em;
+    text-align: center;
+    color: #2F4F4F;
+}
+.row h2 {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 3em;
+}
+h1, h2, h2 {
+    font-weight: bold;
+}
+.btn {
+    visibility: hidden;
+}
+.col-md-2 {
+    font-size: 2.6em;
+}
+.btn:hover {
+    border-color: #fff;
+    box-shadow: -2px -1px 2em #fff;
+    text-shadow: -2px -1px 0.6em #fff;
+}
+.btn-floating {
+    width: 30px;
+    height: 30px;
+}
+.btn-floating i{
+    margin-top: -3px;
+}
+.waves-effect  {
+    float: right;
+}
+.weight-maker {
+    text-decoration: none;
+    color: #dcdcdc;
+    cursor: pointer;
+    font-weight: bold;
+}
+i.small {
+    font-size: 30px;
+    margin-top: -8px;
+}
+.weight-maker:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+#topline {
+    width: 100%;
+    position: absolute;
+    opacity: 0.85;
+}
+#topline div {
+    width: 100%;
+    height: 65px;
+    background: -moz-linear-gradient(top, #008080 2%, #5F9EA0 67%, #D3D3D3 100%);/*#d1d1d1 51%, #fefefe 100%);*/
+    padding: 0 10%;
+}
+#topline h2 {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 3em;
+    opacity: 1;
+    z-index: 22;
+}
+.pros-holder,
+.cons-holder {
+    padding-top: 80px;
+}
+ul {
+    list-style: none;
+    min-height: 200px;
+    padding-top: 40px;
+}
+ul li {
+    display: block;
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 5px;
+    height: 70px;
+}
+#pros ul li {
+    background-color: #66CDAA;
+    border-color: #66CDAA;/*#90EE90;*/
+}
+#pros ul li:hover {
+    border-color: #fff;
+    box-shadow: -2px -1px 2em #90EE90;
+    text-shadow: -2px -1px 0.6em #fff;
+    color: #fff;
+}
+#cons ul li {
+    background-color: #f1a899;/*#FFB6C1;*/
+    border-color: #f1a899;/*#FFC0CB;*/
+}
+#cons ul li:hover {
+    border-color: #fff;
+    box-shadow: -2px -1px 2em #FFC0CB;
+    text-shadow: -2px -1px 0.6em #fff;
+    color: #fff;
+}
+#pros h3,
+#cons h3, {
+    display: inline-block;
+    width: 83%;
+}
+h3:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.textinput {
+    display: none;
+    width: 83%;
+}
+.textinput input {
+    display: inline-block;
+    width: 92%;
+    margin-top: 17px;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+button {
+    display: inline-block;
+    width: 6%;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: #2F4F4F;
+    outline: none;
+    border: 1px;
+}
+button:focus {
+    outline: none;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #fff;
+}
+.mdi-action-done :active {
+    color: #fff;
+}
+.weight-container {
+    float: left;
+    width: 10%;
+}
+.weight-container *{
+    display: block;
+    height: 20px;
+    text-align: center;
+}
+.weight-container + a {
+    height: 40px;
+}
+strong {
+    margin-bottom: -10px;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 18px;
+}
+.toast span {
+    font-size: 1.2em;
+}
+.toast a,
+.toast a:active,
+.toast a:visited {
+    color: #E6E6FA;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+.placeholder {
+    height: 35px;
+}

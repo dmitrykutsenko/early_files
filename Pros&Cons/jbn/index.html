@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Pros&amp;Cons</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/smoothness/theme.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="jumbotron">
+    <h1>Lost in making decision?</h1>
+    <div class="container">
+        <h2>Try to find out and name all the pros & cons, weight them all, <br> and maybe then you`ll see which to choose!<sup><small>*</small></sup></h2>
+        <p>* precaution: the results obtained on this page are not a guide to action or inaction, they are for your guidance only.</p>
+    </div>
+</div>
+
+<div id="topline">
+    <div>
+        <h2 class="col-md-5">Pros</h2>
+        <h2 class="col-md-2 mdi-action-thumbs-up-down">?</h2>
+        <h2 class="col-md-5">Cons</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 pros-holder">
+
+        <a class="add-btn waves-effect waves-light btn"><i class="mdi-content-add left"></i>Add to pros</a>
+        <div id="pros">
+            <ul>
+                <li class="item">
+                    <a class="btn-floating waves-effect waves-light grey"><i class="mdi-content-remove right"></i></a>
+                    <div class="weight-container">
+                        <a class="weight-up"><i class="small mdi-navigation-arrow-drop-up weight-maker"></i></a>
+                        <strong> 0 </strong>
+                        <a class="weight-down"><i class="small mdi-navigation-arrow-drop-down weight-maker"></i></a>
+                    </div>
+                    <h3>New reason to describe...</h3>
+                    <div class="textinput">
+                        <input type="text"><button class="middle mdi-action-done"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--
+    <div class="col-md-2"></div>
+    -->
+    <div class="col-md-6 cons-holder">
+
+        <a class="add-btn waves-effect waves-light btn"><i class="mdi-content-add left"></i>Add to cons</a>
+        <div id="cons">
+            <ul>
+                <li class="item">
+                    <a class="btn-floating waves-effect waves-light grey"><i class="mdi-content-remove right"></i></a>
+                    <div class="weight-container">
+                        <a class="weight-up"><i class="small mdi-navigation-arrow-drop-up weight-maker"></i></a>
+                        <strong> 0 </strong>
+                        <a class="weight-down"><i class="small mdi-navigation-arrow-drop-down weight-maker"></i></a>
+                    </div>
+                    <h3>New reason to describe...</h3>
+                    <div class="textinput">
+                        <input type="text"><button class="mdi-action-done"></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/jqueryui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

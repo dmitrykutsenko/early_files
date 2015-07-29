@@ -80,10 +80,10 @@ div {
 }
 .winner-message {
 	margin-top: 0;
-	height: 28px;
+	height: 37px;
 	cursor: none;
 	display: inline-block;
 	background-color: #CD5C5C;	
 	visibility: hidden;
-	padding-top: 2px;
+	padding-top: 7px;
 }

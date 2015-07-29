@@ -1,3 +1,9 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 a{
     text-decoration: none;
 }
@@ -97,7 +103,9 @@ i.small {
 #topline div {
     width: 100%;
     height: 65px;
-    background: -moz-linear-gradient(top, #008080 2%, #5F9EA0 67%, #D3D3D3 100%);/*#d1d1d1 51%, #fefefe 100%);*/
+	background-color: #008080;
+    background: linear-gradient(top, #008080 2%, #5F9EA0 67%, #D3D3D3 100%);
+    background: #008080 -moz-linear-gradient(top, #008080 2%, #5F9EA0 67%, #D3D3D3 100%);
     padding: 0 10%;
 }
 #topline h2 {
